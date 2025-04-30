@@ -39,8 +39,7 @@ ros2 run realsense2_camera realsense2_camera_node
 ```
 ros2 topic list
 ```
-```
-
+The outcome, is the following topics
 
     /camera/camera/color/camera_info
     /camera/camera/color/image_raw
@@ -58,4 +57,4 @@ ros2 topic list
     /camera/camera/infra2/camera_info
     /camera/camera/infra2/image_rect_raw
     /camera/camera/infra2/metadata
-```
+
