@@ -1,6 +1,6 @@
 # REALSENSE_INSTALLATION
 
-## Installation involves 3 steps
+## INSTALLATION INVOLVES 3 SETUP
 
 ## Step 1
 Run the following on the terminal
