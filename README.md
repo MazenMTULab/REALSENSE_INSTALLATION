@@ -26,25 +26,8 @@ realsense-viewer
 
 ## Step 2: INSTALLING INTELREALSENSE WRAPPER
 ```
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws/src/
-```
-```
-git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-master
-cd ~/ros2_ws
-```
-```
-sudo apt-get install python3-rosdep -y
-sudo rosdep init # "sudo rosdep init --include-eol-distros" for Foxy and earlier
-rosdep update # "sudo rosdep update --include-eol-distros" for Foxy and earlier
-rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys=librealsense2 -y
-```
-```
-colcon build
-```
-```
-ROS_DISTRO=humble
-source /opt/ros/$ROS_DISTRO/setup.bash
-cd ~/ros2_ws
-. install/local_setup.bash
+cd ~/real_camera_ws/src
+git clone https://github.com/IntelRealSense/realsense-ros.git
+cd ~/real_camera_ws
+colcon build --symlink-install
 ```
