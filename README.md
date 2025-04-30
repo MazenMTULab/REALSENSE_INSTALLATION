@@ -17,3 +17,7 @@ sudo apt-get install librealsense2-dkms
 ```
 sudo apt-get install librealsense2-utils
 ```
+connect camera and run the following
+```
+realsense-viewer
+```
