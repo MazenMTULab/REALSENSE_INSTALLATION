@@ -1,6 +1,8 @@
 # REALSENSE_INSTALLATION
 
 ## Installation involves 3 steps
+
+## Step 1
 Run the following on the terminal
 ```
 sudo mkdir -p /etc/apt/keyrings
@@ -21,3 +23,5 @@ connect camera and run the following
 ```
 realsense-viewer
 ```
+
+## Step 2
