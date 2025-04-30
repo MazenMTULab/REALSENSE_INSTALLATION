@@ -1,8 +1,8 @@
 # REALSENSE_INSTALLATION
 
-## INSTALLATION INVOLVES 3 SETUP
+## INSTALLATION INVOLVES 2 SETUP
 
-## Step 1
+## Step 1: INSTALLING INTELRESENSE SDK2.0
 Run the following on the terminal
 ```
 sudo mkdir -p /etc/apt/keyrings
@@ -24,4 +24,14 @@ connect camera and run the following
 realsense-viewer
 ```
 
-## Step 2
+## Step 2: INSTALLING INTELREALSENSE WRAPPER
+```
+git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-master
+cd ~/ros2_ws
+```
+```
+sudo apt-get install python3-rosdep -y
+sudo rosdep init # "sudo rosdep init --include-eol-distros" for Foxy and earlier
+rosdep update # "sudo rosdep update --include-eol-distros" for Foxy and earlier
+rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys=librealsense2 -y
+```
