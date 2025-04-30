@@ -31,3 +31,7 @@ git clone https://github.com/IntelRealSense/realsense-ros.git
 cd ~/real_camera_ws
 colcon build --symlink-install
 ```
+
+```
+ros2 run realsense2_camera realsense2_camera_node
+```
