@@ -11,3 +11,9 @@ echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.in
 sudo tee /etc/apt/sources.list.d/librealsense.list
 sudo apt-get update
 ```
+```
+sudo apt-get install librealsense2-dkms
+```
+```
+sudo apt-get install librealsense2-utils
+```
