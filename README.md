@@ -35,3 +35,7 @@ colcon build --symlink-install
 ```
 ros2 run realsense2_camera realsense2_camera_node
 ```
+
+```
+ros2 topic list
+```
