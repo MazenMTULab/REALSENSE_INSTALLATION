@@ -2,6 +2,8 @@
 
 ## INSTALLATION INVOLVES 2 SETUP
 
+Ubuntu 22.04 ROS 2 Humble
+
 ## Step 1: INSTALLING INTELRESENSE SDK2.0
 Run the following on the terminal
 ```
@@ -14,11 +16,9 @@ sudo tee /etc/apt/sources.list.d/librealsense.list
 sudo apt-get update
 ```
 ```
-sudo apt-get install librealsense2-dkms
+sudo apt install librealsense2-utils librealsense2-dev
 ```
-```
-sudo apt-get install librealsense2-utils
-```
+
 connect camera and run the following
 ```
 realsense-viewer
